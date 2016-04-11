@@ -8,15 +8,17 @@
 <script type=text/javascript>
     window.google.identitytoolkit.signInButton(
             '#navbar', // accepts any CSS selector
-            {
-                "widgetUrl": "http://localhost:8080/login/oauth2callback",
-                "signInSuccessUrl": "http://localhost:8080/login/success",
-                "signOutUrl": "http://localhost:8080",
-                "oobActionUrl": "http://localhost:8080/sendMail",
-                "apiKey": "AIzaSyCPiPVd0sqX5eXIlmICwk9EIh49X2c6LKs",
-                "siteName": "this site",
-                "signInOptions": ["password","google","facebook"]
-            }
+        {
+            widgetUrl: "http://localhost:8080/login/oauth2callback",
+            signOutUrl: "http://localhost:8080",
+            // Optional - Begin the sign-in flow in a popup window
+            //popupMode: true,
+    
+            // Optional - Cookie name (default: gtoken)
+            //            NOTE: Also needs to be added to config of ‘widget
+            //                  page’. See below
+            //cookieName: ‘example_cookie’,
+        }
 
     );
 </script>
