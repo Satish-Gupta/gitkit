@@ -15,7 +15,7 @@
                 "oobActionUrl": "http://localhost:8080/sendMail",
                 "apiKey": "AIzaSyCPiPVd0sqX5eXIlmICwk9EIh49X2c6LKs",
                 "siteName": "this site",
-                "signInOptions": ["password","google"]
+                "signInOptions": ["password","google","facebook"]
             }
 
     );
